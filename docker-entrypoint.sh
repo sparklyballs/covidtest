@@ -11,8 +11,7 @@ cd /covid-blockchain || exit 1
 # shellcheck disable=SC1091
 . ./activate
 
-covid init
-# covid init --fix-ssl-permissions
+covid init --fix-ssl-permissions
 
 if [[ ${testnet} == 'true' ]]; then
    echo "configure testnet"
